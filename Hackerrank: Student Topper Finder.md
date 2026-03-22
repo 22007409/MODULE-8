@@ -1,36 +1,41 @@
+# # 🔢 Hackerrank:# 🏆 Student Topper Finder
+
+This Python program helps determine the **top-performing student** based on the total marks across five subjects. It uses a dictionary to store each student’s marks and identifies the topper using simple calculations and built-in functions.
+
+---
+
 ## 🎯 Aim
 
-To write a Python program to calculate the final amount paid by Vimla for purchasing a microwave oven after applying a discount and adding CST.
+To maintain a dictionary of students with their marks in five subjects, calculate their **total marks**, store them in a new dictionary, and identify the **student with the highest total (topper)**.
 
+---
 
 ## 🧠 Algorithm
 
-1. Start the program
-2. Initialize the amount of the microwave oven as Rs.25,000.
-3. Read the discount percentage (5%) and CST percentage (2%).
-4. Calculate the discount amount:
-         discount_amount=discount_percentage/100*amount
-5. Calculate the CST amount:
-         cst_amount=cst_percentage/100*amount
-6. Calculate the final amount to be paid:
-      final_amount=amount+cst_amount-discount_amount
-7. Display the final amount.
-8. Stop the program. 
+1. **Start** the program.
+2. Create a dictionary `student_marks`:
+   - Keys → Student names.
+   - Values → List of marks in five subjects.
+3. Initialize an empty dictionary `total_marks`.
+4. Loop through `student_marks`:
+   - Calculate the total marks using `sum()`.
+   - Store the result in `total_marks`.
+5. Use `max()` on `total_marks` to find the student with the highest total.
+6. Print:
+   - The `total_marks` dictionary.
+   - The **topper's name and score**.
+
 ---
 
 ## 💻 PROGRAM:
 ```
-amount=25000
-discount_percentage=5
-cst_percentage=2
-discount_amount=(discount_percentage/100)*amount
-cst_amount=(cst_percentage/100)*amount
-final_amount=amount+cst_amount-discount_amount
-print(final_amount)
+m1,m2,m3=int(input()),int(input()),int(input())
+total=m1+m2+m3;
+percentage=(total/300)*100
+print("Total marks obtained is {} and the percentage obtained is {}".format(total,percentage))
 ```
 ## OUTPUT
-
-<img width="1183" height="190" alt="image" src="https://github.com/user-attachments/assets/17e2e2e8-1a19-4e35-b2b8-90535b79f63e" />
+![image](https://github.com/user-attachments/assets/ba7a3960-ddb6-422b-9432-ad47c981b1ad)
 
 ## RESULT
-Hence Calculated total marks for students and find the topper.
+Program is verified.
